@@ -4,12 +4,14 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
+import org.springframework.cloud.config.server.EnableConfigServer;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
  * Created by hxuhao233 on 2018/11/17.
  */
 @EnableEurekaServer
+@EnableConfigServer
 @SpringBootApplication
 public class EurekaConfigServer extends SpringBootServletInitializer {
 
