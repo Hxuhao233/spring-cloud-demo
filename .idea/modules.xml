@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/eureka-config-center/eureka-config-center.iml" filepath="$PROJECT_DIR$/eureka-config-center/eureka-config-center.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring-cloud-demo.iml" filepath="$PROJECT_DIR$/.idea/spring-cloud-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user-service/user-service.iml" filepath="$PROJECT_DIR$/user-service/user-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user-service-client/user-service-client.iml" filepath="$PROJECT_DIR$/user-service-client/user-service-client.iml" />
     </modules>
   </component>
 </project>

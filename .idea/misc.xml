@@ -2,11 +2,15 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/eureka-config-center" />
+    <file type="web" url="file://$PROJECT_DIR$/user-service" />
+    <file type="web" url="file://$PROJECT_DIR$/user-service-client" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/eureka-config-center/pom.xml" />
+        <option value="$PROJECT_DIR$/user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/user-service-client/pom.xml" />
       </list>
     </option>
   </component>

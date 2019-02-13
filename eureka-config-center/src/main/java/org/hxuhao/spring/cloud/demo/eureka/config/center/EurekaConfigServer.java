@@ -1,4 +1,4 @@
-package org.hxuhao.spring.cloud.demo;
+package org.hxuhao.spring.cloud.demo.eureka.config.center;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
