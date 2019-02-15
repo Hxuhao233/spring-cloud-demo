@@ -16,7 +16,7 @@ public class UserService implements IUserService {
 
     @Override
     public String getUserById(Integer id) {
-        return restTemplate.getForObject("http://user-service/users/{id}", String.class, id);
+        return restTemplate.getForObject("http://user-service-provider/users/{id}", String.class, id);
     }
 
 }

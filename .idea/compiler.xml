@@ -9,12 +9,16 @@
         <module name="eureka-config-center" />
         <module name="user-service" />
         <module name="user-service-client" />
+        <module name="user-service-consumer" />
+        <module name="user-service-provider" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="eureka-config-center" target="1.8" />
       <module name="user-service" target="1.8" />
       <module name="user-service-client" target="1.8" />
+      <module name="user-service-consumer" target="1.8" />
+      <module name="user-service-provider" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
