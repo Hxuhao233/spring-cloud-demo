@@ -1,10 +1,9 @@
-package org.hxuhao.spring.cloud.demo.user.service.client.controller;
+package org.hxuhao.spring.cloud.demo.user.service.consumer.controller;
 
-import org.hxuhao.spring.cloud.demo.user.service.client.service.IUserService;
+import org.hxuhao.spring.cloud.demo.user.service.consumer.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
 import org.springframework.web.bind.annotation.*;
@@ -22,7 +21,7 @@ public class UserController {
     private LoadBalancerClient loadBalancerClient;
 
     @Autowired
-    private IUserService userService;
+    private UserService userService;
 
     @GetMapping(value = "/{id}")
     public String getUserById(@PathVariable("id")Integer id){
