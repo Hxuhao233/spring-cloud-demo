@@ -1,0 +1,16 @@
+## .gitignore for intellij
+ 
+*.iml
+*.ipr
+*.iws
+.idea
+
+
+
+#.gitignore for java
+*.class
+ 
+# Package Files #
+*.jar
+*.war
+*.ear/
