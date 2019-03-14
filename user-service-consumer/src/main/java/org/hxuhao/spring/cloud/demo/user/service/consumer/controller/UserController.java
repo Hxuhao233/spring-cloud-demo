@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 /**
  * Created by hxuhao233 on 2018/12/8.
@@ -33,6 +34,16 @@ public class UserController {
     public void logUserInstance(){
         ServiceInstance instance = loadBalancerClient.choose("user-service-provider");
         LOGGER.info("{}:{}:{}", instance.getServiceId(), instance.getHost(), instance.getPort());
+    }
+
+    @PostMapping(value = "/upload")
+    public String upload(@RequestParam(value = "file")MultipartFile file) {
+        return file.getName();
+    }
+
+    @PostMapping(value = "/test")
+    public String test(@RequestParam(value = "test")String test) {
+        return "a";
     }
 
 }
